@@ -130,5 +130,9 @@ body {
     .class-publications img, .class-experience img{
         width: 50px;
     }
+    .right-column img{
+        max-width: 400px;
+        width: 100%;
+    }
 }
 
