@@ -36,12 +36,12 @@ a:visited, a:link {
     color: #4E557A;
 }
 
-.class-publications {
+.class-publications, .class-experience {
     display: flex;
     align-items: center; /* This vertically centers the items in the flex container */
 }
 
-.class-publications img {
+.class-publications img, .class-experience img {
     margin-right: 20px; /* Adds some space between the image and the text */
 }
 
