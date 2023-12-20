@@ -1,20 +1,29 @@
 body{
-    max-width: 1080px;
+    max-width: 800px;
     padding: 0 1.5rem;
     margin: auto;
     padding: 0 40px; /* Padding on left and right */
     font-family: 'indivisible', sans-serif;
+    font-size: small;
     font-weight: 400;
 }
 
 h1{
-    color: #7D98CF;
+    color: #4E557A;
+    /* color: #7D98CF; */
     font-size: x-large;
     font-weight:500;
 }
 
 h2{
     font-weight: 500;
+    font-size: medium;
+    margin-bottom: 5px; /*Adjust this value as needed*/
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 a:visited, a:link{
@@ -32,13 +41,10 @@ a:visited, a:link{
     margin-right: 20px; /* Adds some space between the image and the text */
 }
 
-.class-publications-text {
-    /* Additional styles for text content if needed */
-}
-
 /* Style for the header */
 .header {
     display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* This is the key property */
     justify-content: space-between; /* Aligns items to the left and right */
     align-items: center; /* Centers items vertically */
     padding: 10px; /* Adds some padding */
@@ -59,7 +65,7 @@ a:visited, a:link{
     padding: 10px 0; /* Vertical padding only */
     text-decoration: none;
     position: relative;
-    margin-right: 40px;
+    margin-inline: 15px;
 }
 
 /* ::after pseudo-element for underline */
@@ -81,3 +87,40 @@ a:visited, a:link{
 .top-nav ul li a:hover::after {
     transform: scaleX(1);
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Right column comes first in the flow */
+    align-items: center; /* Aligns items to the top */
+    gap: 20px; /* Space between columns */
+}
+
+.left-column {
+    flex: 1; /* Both columns take equal width */
+}
+
+/* When the container is narrower than 600px */
+@media screen and (max-width: 800px) {
+    h1{
+        text-align: center;
+    }
+    
+    .header, .container {
+        flex-direction: column; /* Stack columns vertically */
+    }
+    .top-nav{
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .right-column, .left-column {
+        flex-basis: 100%; /* Each column takes full width */
+    }
+    .right-column{
+        text-align: center;
+    }
+}
+
