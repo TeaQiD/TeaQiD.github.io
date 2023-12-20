@@ -22,8 +22,8 @@ h2{
 }
 
 p{
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 16px;
     line-height: 1.5; /* Adjust this value as needed */
 }
 
@@ -93,10 +93,6 @@ a:visited, a:link {
     transform: scaleX(1);
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
 .container {
     display: flex;
     flex-direction: row-reverse; /* Right column comes first in the flow */
@@ -106,6 +102,10 @@ body {
 
 .left-column {
     flex: 1; /* Both columns take equal width */
+}
+
+.list-update{
+    margin-bottom: 16px;
 }
 
 /* When the container is narrower than 600px */
