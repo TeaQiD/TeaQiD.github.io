@@ -24,13 +24,17 @@ h2{
 p{
     margin-top: 5px;
     margin-bottom: 20px;
+    line-height: 1.5; /* Adjust this value as needed */
 }
 
-a:visited, a:link{
+a:visited, a:link {
     color: #7D98CF;
     text-decoration: none;
 }
 
+.date{
+    color: #4E557A;
+}
 
 .class-publications {
     display: flex;
